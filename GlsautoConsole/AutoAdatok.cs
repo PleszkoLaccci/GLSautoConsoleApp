@@ -8,11 +8,11 @@ namespace GlsautoConsole
 {
     internal class AutoAdatok
     {
-        string datum { get; set; }
-        string sofornev { get; set; }
-        int kilometer { get; set; }
-        int csomagszam { get; set; }
-        int fogyasztas { get; set; }
+        public string datum { get; set; }
+        public string sofornev { get; set; }
+        public int kilometer { get; set; }
+        public int csomagszam { get; set; }
+        public int fogyasztas { get; set; }
 
         public AutoAdatok(string datum, string sofornev, int kilometer, int csomagszam, int fogyasztas)
         {
@@ -32,9 +32,6 @@ namespace GlsautoConsole
             this.fogyasztas = int.Parse(sorSplit[4]);
         }
 
-        public override string ToString()
-        {
-            return $"{datum} {sofornev} {kilometer} {csomagszam} {fogyasztas}";
-        }
+        
     }
 }

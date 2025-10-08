@@ -1,0 +1,8 @@
+C:\Users\pleszkol\Desktop\GlsautoConsole\GlsautoConsole\obj\Debug\GlsautoConsole.csproj.AssemblyReference.cache
+C:\Users\pleszkol\Desktop\GlsautoConsole\GlsautoConsole\obj\Debug\GlsautoConsole.csproj.CoreCompileInputs.cache
+C:\Users\pleszkol\Desktop\GlsautoConsole\GlsautoConsole\bin\Debug\GLS.txt
+C:\Users\pleszkol\Desktop\GlsautoConsole\GlsautoConsole\bin\Debug\GlsautoConsole.exe.config
+C:\Users\pleszkol\Desktop\GlsautoConsole\GlsautoConsole\bin\Debug\GlsautoConsole.exe
+C:\Users\pleszkol\Desktop\GlsautoConsole\GlsautoConsole\bin\Debug\GlsautoConsole.pdb
+C:\Users\pleszkol\Desktop\GlsautoConsole\GlsautoConsole\obj\Debug\GlsautoConsole.exe
+C:\Users\pleszkol\Desktop\GlsautoConsole\GlsautoConsole\obj\Debug\GlsautoConsole.pdb
