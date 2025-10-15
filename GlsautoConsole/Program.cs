@@ -32,12 +32,35 @@ namespace GlsautoConsole
             Console.WriteLine("Az autó használatban töltött napjainak száma: "+ossz);
 
             //Feladat 3
-
-            foreach(var item in adatok)
+            //elso megoldas nehezebb 
+            List<string> nevek = new List<string>();
+            for (int j = 0; j < adatok.Count; j++) 
             {
-                
+                bool van = false;
+
+                for(int i = 0; i < nevek.Count; i++)
+                {
+                    if (adatok[j].sofornev == nevek[i])
+                    {
+                        van = true;
+                    }
+                }
+                if (van == false)
+                {
+                    nevek.Add(adatok[j].sofornev);
+                    Console.Write(adatok[j].sofornev + ", ");
+                }
             }
 
+            //Feladat 3 masik megoldas konnyebb 
+            foreach (var item in adatok)
+            {
+                if (!nevek.Contains(item.sofornev))
+                {
+                    nevek.Add(item.sofornev);
+                }
+            }
+            Console.WriteLine("A különböző sofőrök száma: " + nevek.Count);
 
             //Feladat 4
             int km = 0;
@@ -66,8 +89,28 @@ namespace GlsautoConsole
             }
             Console.WriteLine("Atlagfogyasztas:" +AtlagFogyasztas() + "L/100km");
 
-            
 
+            //Feladat 7
+
+
+            List<string> legtobbetvezetosofor = new List<string>();
+            int napok = 0;
+            foreach (var item in adatok) {
+                if (item.kilometer == adatok.Max(x => x.kilometer))
+                {
+                    legtobbetvezetosofor.Add(item.sofornev);
+
+                }
+             
+            }
+            foreach(var item in adatok)
+            {
+                if(legtobbetvezetosofor.Contains(item.sofornev))
+                {
+                    napok++;
+                }
+            }
+            Console.WriteLine($"A legtöbbet vezető sofőr: " + string.Join(" , ", legtobbetvezetosofor) + ", " + "napok száma: " + napok);
 
         }
     }

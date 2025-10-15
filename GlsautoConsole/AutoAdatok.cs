@@ -8,11 +8,11 @@ namespace GlsautoConsole
 {
     internal class AutoAdatok
     {
-        public string datum { get; set; }
-        public string sofornev { get; set; }
-        public int kilometer { get; set; }
-        public int csomagszam { get; set; }
-        public int fogyasztas { get; set; }
+        public string datum { get;  }
+        public string sofornev { get;  }
+        public int kilometer { get; }
+        public int csomagszam { get; }
+        public int fogyasztas { get; }
 
         public AutoAdatok(string datum, string sofornev, int kilometer, int csomagszam, int fogyasztas)
         {
